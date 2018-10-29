@@ -36,7 +36,7 @@ echo push-to-github2.bat>>exclude.txt
 echo exclude.txt>>exclude.txt
 
 echo 2--coyp...
-echo xcopy /y/e/s/h/q . %wwwdir% /exclude:exclude.txt
+xcopy /y/e/s/h/q . %wwwdir% /exclude:exclude.txt
 del exclude.txt
 echo "copy  finish %wwwdir%"
 
