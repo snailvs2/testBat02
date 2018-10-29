@@ -1,5 +1,4 @@
 echo off
-::%YYYYmmdd%HH%hhmiss%
 ::当期目录拉下文件
 git --git-dir=%cd%\.git pull
 
@@ -44,7 +43,7 @@ echo "copy  finish %wwwdir%"
 echo git add...
 git --git-dir="%wwwdir%\.git" add -A
 echo git commit...
-git --git-dir="%wwwdir%\.git" commit -am"提交"
+git --git-dir="%wwwdir%\.git" commit -am"%date%%time%"
 echo git push
 git --git-dir="%wwwdir%\.git" push
 echo git finish
